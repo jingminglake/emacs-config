@@ -34,9 +34,9 @@
 (ivy-mode 1)
 (setq ivy-use-virtual-buffers t)
 
-(require 'smartparens-config)
-(add-hook 'emacs-lisp-mode-hook 'smartparens-mode)
-;;(smartparens-global-mode t)
+;;(require 'smartparens-config)
+;;(add-hook 'emacs-lisp-mode-hook 'smartparens-mode)
+(smartparens-global-mode t)
 
 (global-company-mode t)
 
