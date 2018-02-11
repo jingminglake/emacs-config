@@ -4,57 +4,27 @@
 ;; just comment it out by adding a semicolon to the start of the line.
 ;; You may delete these explanatory comments.
 
+
+;; Added by Package.el.  This must come before configurations of
+;; installed packages.  Don't delete this line.  If you don't want it,
+;; just comment it out by adding a semicolon to the start of the line.
+;; You may delete these explanatory comments.
+(package-initialize)
+
 (when (>= emacs-major-version 24)
-  (require 'package)
-  (package-initialize)
   (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
   )
 
 (require 'cl) ;;  common lisp package
 
-;;add whatever packages I want here
-(defvar yaxionh/packages '(
-			   company
-			   zenburn-theme
-			   hungry-delete
-			   swiper
-			   counsel
-			   smartparens
-			   exec-path-from-shell
-			   
-			   ) "Defalut packages")
-(setq package-selected-packages yaxionh/packages)
+(add-to-list 'load-path "~/.emacs.d/lisp/")
 
-(defun yaxionh/packages-installed-p ()
-  (loop for pkg in yaxionh/packages
-	when (not (package-installed-p pkg)) do (return nil)
-		  finally (return t)))
-
-  (unless (yaxionh/packages-installed-p)
-    (message "%s" "Refreshing package database...")
-    (package-refresh-contents)
-    (dolist (pkg yaxionh/packages)
-      (when (not (package-installed-p pkg))
-	(package-install pkg))))
-			     
-(require 'hungry-delete)
-(global-hungry-delete-mode)
-
-(require 'smartparens-config)
-(add-hook 'emacs-lisp-mode-hook 'smartparens-mode)
-;;(smartparens-global-mode t)
-
-
-;; let emacs could find the execuable file in mac os
-(when (memq window-system '(mac ns x))
-  (exec-path-from-shell-initialize))
-
+(require 'init-packages)
 ;; hot refresh when init.el modified
 (global-auto-revert-mode t)
 
 
-(ivy-mode 1)
-(setq ivy-use-virtual-buffers t)
+
 (setq enable-recursive-minibuffers t)
 (global-set-key "\C-s" 'swiper)
 (global-set-key (kbd "C-c C-r") 'ivy-resume)
@@ -80,7 +50,6 @@
   (find-file "~/.emacs.d/init.el"))
 
 (global-set-key (kbd "<f1>") 'open-my-init-file)
-(global-company-mode t)
 
 
 (recentf-mode t)
@@ -119,5 +88,3 @@
 (add-hook 'emacs-lisp-mode-hook 'show-paren-mode)
 
 (global-hl-line-mode t)
-
-(load-theme 'zenburn t)
