@@ -6,7 +6,10 @@
  '(company-minimum-prefix-length 1)
  '(custom-safe-themes
    (quote
-    ("599f1561d84229e02807c952919cd9b0fbaa97ace123851df84806b067666332" default))))
+	("599f1561d84229e02807c952919cd9b0fbaa97ace123851df84806b067666332" default)))
+ '(package-selected-packages
+   (quote
+	(qml-mode markdown-mode company zenburn-theme hungry-delete swiper counsel smartparens exec-path-from-shell popwin))))
 
 (custom-set-faces
  ;; custom-set-faces was added by Custom.

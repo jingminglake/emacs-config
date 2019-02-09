@@ -1,3 +1,11 @@
+(when (>= emacs-major-version 24)
+  ;;(add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
+  (add-to-list 'package-archives
+             '("melpa-stable" . "https://stable.melpa.org/packages/"))
+  )
+
+(require 'cl) ;;  common lisp package
+
 ;;add whatever packages I want here
 (defvar yaxionh/packages '(
 			   company
