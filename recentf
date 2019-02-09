@@ -2,26 +2,6 @@
 
 (setq recentf-list
       '(
-        "/Users/yaxionh/毕业设计PluginManager/Client/pluginManager/PM/src/PluginManager.cpp"
-        "/Users/yaxionh/毕业设计PluginManager/Client/pluginManager/PM/include/PluginManager.h"
-        "/Users/yaxionh/毕业设计PluginManager/Client/pluginManager/PM/src/PluginMDownload.cpp"
-        "/Users/yaxionh/毕业设计PluginManager/Client/pluginManager/PM/include/PluginMDownload.h"
-        "/Users/yaxionh/毕业设计PluginManager/Client/pluginManager/PM/qml/PluginMupdate.qml"
-        "/Users/yaxionh/毕业设计PluginManager/Client/pluginManager/PM/qml/PluginMtab.qml"
-        "/Users/yaxionh/毕业设计PluginManager/Client/pluginManager/PM/qml/PluginMdownLoad.qml"
-        "/Users/yaxionh/毕业设计PluginManager/Client/pluginManager/PM/qml/PluginUpdateDelegate.qml"
-        "/Users/yaxionh/毕业设计PluginManager/Server/cjgj/GeoVisGit/Plugins/BrowserTool/browsertool_global.h"
-        "/Users/yaxionh/毕业设计PluginManager/Server/cjgj/GeoVisGit/GeoVisSDK/Plugin/GxPluginAttribute.h"
-        "/Users/yaxionh/毕业设计PluginManager/Server/cjgj/GeoVisGit/GeoVisSDK/Plugin/GxPluginAttribute.cpp"
-        "/Users/yaxionh/毕业设计PluginManager/Server/cjgj/GeoVisGit/Plugins/BrowserTool/browsertool.cpp"
-        "/Users/yaxionh/毕业设计PluginManager/Server/cjgj/GeoVisGit/Plugins/BrowserTool/browsertool.h"
-        "/Users/yaxionh/毕业设计PluginManager/Server/cjgj/GeoVisGit/Plugins/Annotation/annotation_global.h"
-        "/Users/yaxionh/毕业设计PluginManager/Server/cjgj/GeoVisGit/Plugins/BasicPlugin/basicplugin_global.h"
-        "/Users/yaxionh/毕业设计PluginManager/Server/cjgj/GeoVisGit/GeoVisSDK/Plugin/GxPluginPackage.cpp"
-        "/Users/yaxionh/毕业设计PluginManager/Server/cjgj/GeoVisGit/GeoVisSDK/Plugin/GxPluginPackage.h"
-        "/Users/yaxionh/毕业设计PluginManager/Server/cjgj/GeoVisGit/GeoVisSDK/Plugin/GxPluginManager.cpp"
-        "/Users/yaxionh/毕业设计PluginManager/Server/cjgj/GeoVisGit/GeoVisSDK/Plugin/GxPluginManager.h"
-        "/Users/yaxionh/毕业设计PluginManager/Client/pluginManager/PM/qml/dd.qml"
         ))
 
 (setq recentf-filter-changer-current 'nil)
